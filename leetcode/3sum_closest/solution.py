@@ -1,6 +1,5 @@
 class Solution:
   def threeSumClosest(self, nums: List[int], target: int) -> int:
-    from typing import List
     nums.sort()
     res = nums[0] + nums[1] + nums[2]
 

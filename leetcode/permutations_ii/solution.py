@@ -1,11 +1,10 @@
 class Solution:
   def permuteUnique(self, nums: List[int]) -> List[List[int]]:
-    from typing import List
     ans = []
     used = [False] * len(nums)
     nums.sort() 
 
-    def dfs(path: List[int]) -> None:
+    def dfs(path) -> None:
       if len(path) == len(nums):
         ans.append(path.copy())
         return
